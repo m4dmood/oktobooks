@@ -22,7 +22,8 @@
     "migration:generate": "npm run typeorm -- migration:generate --dataSource data-source.ts",
     "migration:create": "npm run typeorm -- migration:create",
     "migration:run": "npm run typeorm -- migration:run --dataSource data-source.ts",
-    "migrate": "npm run build && npm run migration:run"
+    "migrate": "npm run build && npm run migration:run",
+    "start:demo": "npm run migration:run && npm run start:dev"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
